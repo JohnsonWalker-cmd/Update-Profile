@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile-Update</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  
+</head>
+<body>
+  <header>
+    <h1>User Profile</h1>
+  </header>
+  <!--Profile container-->
+  <main>
+    <h2>Edit your information below</h2>
+    <article class="main-content">
+      <section class="user-info">
+        <!--<div>
+          <h3 class="profile-name">Johnson Saka</h3>
+          <p class="profile-email">sakajohnson1@gmail.com</p>
+          <p class="profile-age">21 years old</p>
+          <p class="profile-location">Accra, Greater Accra Region</p>
+        </div>-->
+
+      </section>
+      <section class="user-form">
+        <form action=""  id="user-form">
+          <label for="name">Your name:</label>
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <label for="e-mail">Email:</label>
+          <input type="text" name="" id="e-mail" required placeholder="Email">
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" placeholder="Age" required>
+          <label for="location">Location:</label>
+          <input type="text" name="location" id="location" placeholder="Location" required>
+
+          <div class="btn-container">
+            <button class="btn-primary btn" type="submit" id="save-btn">Save changes</button>
+            <button class="btn-secondary btn" type="reset" id="reset-btn">Reset</button>
+          </div>
+        </form>
+        
+      </section>
+    </article>
+  </main>
+</body>
+<script src="./index.js"></script>
+</html>

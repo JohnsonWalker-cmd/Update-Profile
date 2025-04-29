@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Bai Jamjuree",
+    sans-serif;
+}
+header{
+  background-color: #F2E8DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+main{
+  padding: 1rem 2rem 0 2rem;
+}
+main h2{
+  text-align: center;
+  font-weight: 700;
+  color: #F28585;
+}
+.main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input{
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+#location{
+  margin-bottom: 1rem;
+}
+form label{
+  margin-bottom: 0.8rem;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn{
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+.btn-primary{
+  background-color: #F2B263;
+}
+.btn-secondary{
+  background-color: #86A69D;
+}
+.user-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.edit-btn {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .user-form,
+  .user-info {
+    width: 100%;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .user-card {
+    width: 100%;
+  }
+}
